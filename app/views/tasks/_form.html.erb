@@ -4,7 +4,7 @@
       <h2><%= pluralize(task.errors.count, "error") %> prohibited this message from being saved:</h2>
 
       <ul>
-        <% task.errors.full_tasks.each do |msg| %>
+        <% task.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>
@@ -16,6 +16,5 @@
   <%= f.label :status, '状態' %>
   <%= f.text_field :status %>
   
-
   <%= f.submit '投稿' %>
 <% end %>
