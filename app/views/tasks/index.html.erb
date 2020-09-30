@@ -6,6 +6,7 @@
     <% end %>
     
     <%= link_to '新規タスクの投稿', new_task_path %>  
+    <%= link_to 'ログアウト', logout_path, method: :delete %>
 <% else %>
   redirect_to login_path
 <% end %>
